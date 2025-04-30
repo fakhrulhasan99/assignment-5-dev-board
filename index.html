@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Dev Board</title>
+</head>
+<body class="bg-slate-100 py-6" style="font-family: 'Poppins', sans-serif;">
+    <header class="mx-32 my-6">
+        <nav class="bg-white rounded-xl p-6 flex justify-between">
+            <div class="flex justify-between items-center">
+                <img src="Assets/logo.png" alt="" srcset="">
+                <h1 class="text-4xl pl-2">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex justify-between">
+                <div class="flex justify-between items-center bg-slate-100 p-4 rounded-full">
+                    <img src="Assets/checkbox.png" alt="">
+                <h2 class="text-3xl font-bold ml-3">23</h2>
+                </div>
+                <div class="ml-10 bg-slate-100 rounded-full p-3 items-center flex">
+                    <img src="Assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-32 bg-white">
+        <div class="">
+            <div class="p-6 ">
+                <!-- task-discover-date -->
+                <div class="rounded-2xl grid gap-6 grid-cols-4 grid-rows-1 mb-6">
+                    <div class=" bg-slate-100 flex items-center rounded-xl p-8">
+                        <div><img class="mr-8" src="Assets/checkbox.png" alt=""></div>
+                        <div>
+                            <h3>Task Assigned</h3>
+                            <h2 class="text-3xl font-bold">06</h2>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-800 to-blue-400 flex justify-evenly items-center col-span-2 rounded-xl">
+                        <img src="Assets/board.png" alt="">
+                        <h3 class="text-white text-2xl">Discover Something New Today!</h3>
+                    </div>
+                    <div class="flex items-center bg-slate-100 p-8">
+                        <div><img class="mr-6" src="Assets/calender.png" alt=""></div>
+                        <div id="today-date" class="text-2xl font-medium"></div>
+                    </div>
+                </div>
+                <!-- cards section -->
+                <div class="grid grid-cols-3 grid-rows-2 gap-9">
+                     <div class="bg-slate-100 rounded-2xl p-6">
+                        <h3 class="inline-block bg-white text-lg px-4 py-4 rounded-md">ShopEase</h3>
+                        <h2 class="text-2xl font-semibold py-4">Fix Mobile Button Issue </h2>
+                        <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <div class="flex">
+                            <div>
+                                <h5>Deadline</h5>
+                                <div id="deadline"></div>
+                            </div>
+                            <div><button>Completed</button></div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </main>
+    <script src="JS/date.js"></script>
+</body>
+</html>
