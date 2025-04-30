@@ -27,9 +27,9 @@
             </div>
         </nav>
     </header>
-    <main class="mx-32 bg-white">
-        <div class="">
-            <div class="p-6 ">
+    <main class="mx-32 rounded-2xl">
+        <div class="grid gap-6  grid-cols-4">
+            <div class="bg-white p-6 rounded-2xl col-span-3">
                 <!-- task-discover-date -->
                 <div class="rounded-2xl grid gap-6 grid-cols-4 grid-rows-1 mb-6">
                     <div class=" bg-slate-100 flex items-center rounded-xl p-8">
@@ -137,7 +137,16 @@
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div class="bg-white place-items-center p-6 rounded-2xl">
+                <!-- activity log -->
+                <div class="flex ">
+                    <div><img src="Assets/activity.png" alt=""></div>
+                    <div><h3 class="text-slate-600 text-2xl ml-4">Activity Log</h3></div>
+                </div>
+                <div><button class="bg-blue-600 text-white text-lg px-6 py-3 rounded-lg my-6">Clear History</button></div>
+                <div class="w-full border-t border-dotted border-gray-300 my-4"></div>
+                
+            </div>
         </div>
     </main>
     <script src="JS/date.js"></script>
