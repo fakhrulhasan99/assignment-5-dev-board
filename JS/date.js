@@ -6,8 +6,10 @@ const dateName = today.toLocaleDateString(undefined, {year : 'numeric', month : 
 date.innerHTML = `${dayName}<br>${dateName}`;
 
 // deadline 5 days later
-const deadline = document.getElementById("deadline");
+const deadline = document.getElementsByClassName("deadline");
 const deadLine = new Date(today);
 deadLine.setDate(today.getDate()+5);
 const deadLineName = deadLine.toLocaleDateString(undefined, {year : 'numeric', month : 'long', day : 'numeric'});
-deadline.innerHTML = `${deadLineName}`;
+for (let i = 0; i < deadline.length; i++) {
+    deadline[i].innerHTML = `${deadLineName}`;
+  }
