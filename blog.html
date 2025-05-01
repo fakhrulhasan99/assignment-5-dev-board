@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-slate-200 py-6" style="font-family: 'Poppins', sans-serif;">
+    <header class="mx-32 my-6">
+        <nav class="bg-white rounded-xl p-6 flex justify-between">
+            <div class="flex justify-between items-center">
+                <img src="Assets/logo.png" alt="" srcset="">
+                <h1 class="text-4xl pl-2">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="">
+                <button class="bg-blue-600 rounded-lg px-5 py-3 text-2xl text-white" onclick="window.location.href='index.html'">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-32 rounded-2xl">
+        <div>
+            <h1 class="text-center text-4xl font-bold py-5">Blogs</h1>
+        </div>
+        <div class="task-card bg-white rounded-2xl p-6 my-5">
+            <h2 class="text-2xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <div class="border-t border-dotted border-gray-300 my-4"></div>
+            <p class="text-2xl font-semibold text-slate-500">
+                There are several ways to select elements in the DOM by using JavaScript. Here are some of them given below: <br>
+                1. document.getElementById() <br>
+                2. document.getElementsByClassName() <br>
+                3. document.getElementsByTagName() <br>
+                4. document.getElementsByName() <br>
+                5. document.querySelector()
+            </p>
+         </div>
+        <div class="task-card bg-white rounded-2xl p-6 my-5">
+            <h2 class="text-2xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+            <div class="border-t border-dotted border-gray-300 my-4"></div>
+            <p class="text-2xl font-semibold text-slate-500">
+                Here is the short answer below: <br>
+                1. innerHTML: Works with the HTML contents of an element. <br>
+                2. innerText: Works with the text contents of an element. <br>
+                3. textContent: Works almost same as innerText but also includes hidden text contents.
+            </p>
+         </div>
+        <div class="task-card bg-white rounded-2xl p-6 my-5">
+            <h2 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?</h2>
+            <div class="border-t border-dotted border-gray-300 my-4"></div>
+            <p class="text-2xl font-semibold text-slate-500">
+                Event delegation is a technique where we add an event listner directly to a parent instead of each child elements.
+            </p>
+         </div>
+        <div class="task-card bg-white rounded-2xl p-6 my-5">
+            <h2 class="text-2xl font-bold">Question-4: What is event bubbling in the DOM?</h2>
+            <div class="border-t border-dotted border-gray-300 my-4"></div>
+            <p class="text-2xl font-semibold text-slate-500">
+                Event bubbling in the DOM is something like we click on a button inside a div, then it triggers to its parent then grandparent and goes on up to document.
+            </p>
+         </div>
+        <div class="task-card bg-white rounded-2xl p-6 my-5">
+            <h2 class="text-2xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+            <div class="border-t border-dotted border-gray-300 my-4"></div>
+            <p class="text-2xl font-semibold text-slate-500">
+                Here are the simple ways to do these: <br>
+                1. To creat element: document.creatElement() <br>
+                2. To add element: appendChild() <br>
+                3. To remove element: removeChild()
+            </p>
+         </div>
+    </main>
+</body>
+</html>

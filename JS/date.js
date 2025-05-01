@@ -18,6 +18,3 @@ for (let i = 0; i < deadline.length; i++) {
   }
 
 
-
-
-
